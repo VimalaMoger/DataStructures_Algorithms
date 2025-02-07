@@ -1,4 +1,4 @@
-package dataStructuresAndAlgorithms.CodingExercises;
+package dataStructuresAndAlgorithms.codingExercises;
 
 import java.util.Scanner;
 

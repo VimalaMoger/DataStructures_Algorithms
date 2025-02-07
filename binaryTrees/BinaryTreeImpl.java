@@ -66,7 +66,7 @@ public class BinaryTreeImpl {
     //traversing a tree
 
     //Depth-first search
-    //pre-order traversal
+    //pre-order traversal- root-> left -> right
     public void traversePreOrder() {
         traversePreOrder(root);
     }
@@ -80,7 +80,7 @@ public class BinaryTreeImpl {
     }
 
 
-    //In-order traversal
+    //In-order traversal  -left->root->right
     public void traverseInOrder() {
         traverseInOrder(root);
     }
@@ -89,12 +89,12 @@ public class BinaryTreeImpl {
         System.out.println();
         if (root == null)
             return;
-        traversePreOrder(root.leftChild);
+        traverseInOrder(root.leftChild);
         System.out.print(root.val + ", ");
-        traversePreOrder(root.rightChild);
+        traverseInOrder(root.rightChild);
     }
 
-    //Post-order traversal
+    //Post-order traversal- left->right->root
     public void traversePostOrder() {
         traversePostOrder(root);
     }
@@ -103,8 +103,8 @@ public class BinaryTreeImpl {
         System.out.println();
         if (root == null)
             return;
-        traversePreOrder(root.leftChild);
-        traversePreOrder(root.rightChild);
+        traversePostOrder(root.leftChild);
+        traversePostOrder(root.rightChild);
         System.out.print(root.val + ", ");
     }
 

@@ -14,13 +14,16 @@ public class Main {
 
         //find element using Depth-first search
         System.out.println(impl.isElementFound(90));
+        System.out.println("Pre Order");
         impl.traversePreOrder();
+        System.out.println("In Order");
         impl.traverseInOrder();
+        System.out.println("Post Order");
         impl.traversePostOrder();
         System.out.println();
 
         //get the height of the tree
-        System.out.println(impl.getHeight());
+        System.out.println("Height of the tree "+impl.getHeight());
 
         System.out.println(impl.findMinValue());
         System.out.println(impl.findMaxValue());
@@ -40,8 +43,6 @@ public class Main {
 
         //print Nodes at given distance
         impl.printNodeAtDistance(1);
-
-        System.out.println("getHeight "+ impl.getHeight());
 
         //Breadth-first search
         System.out.println("\nBreadth - first level order ");

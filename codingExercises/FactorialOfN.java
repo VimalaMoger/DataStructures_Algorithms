@@ -1,4 +1,4 @@
-package dataStructuresAndAlgorithms.CodingExercises;
+package dataStructuresAndAlgorithms.codingExercises;
 
 public class FactorialOfN {
     public static void main(String[] args) {
